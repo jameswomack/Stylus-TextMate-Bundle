@@ -1,13 +1,17 @@
 Stylus.tmbundle
 ---------------------
 
-A **TextMate Bundle** for the **Stylus** programming language.
+A **TextMate Bundle** for the **Stylus** programming language. 
     
+
 Installation:
 -------------
+###Textmate 1
+    cd ~/Library/Application\ Support/TextMate/Bundles
+    git clone git://github.com/jameswomack/Stylus-TextMate-Bundle Stylus.tmbundle
 
-    cd ~/Library/Application\ Support/TextMate/Bundles (if Textmate 1)
-    cd /Applications/TextMate.app/Contents/SharedSupport/Bundles (if Textmate 2)
+###Textmate 2
+    cd /Applications/TextMate.app/Contents/SharedSupport/Bundles
     git clone git://github.com/jameswomack/Stylus-TextMate-Bundle Stylus.tmbundle
 
 The bundle does not yet include syntax highlighting, but does compile the markup and bring up a window showing you the results as CSS.
