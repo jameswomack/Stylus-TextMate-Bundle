@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>changed</key>
 	<dict>
 		<key>beforeRunningCommand</key>
 		<string>saveActiveFile</string>
@@ -21,18 +19,15 @@ function highlight {
 ${TM_STYLUS:=stylus} | highlight
 
 stylus ${TM_FILEPATH}</string>
-		<key>input</key>
-		<string>document</string>
-		<key>keyEquivalent</key>
-		<string>~@`</string>
-		<key>scope</key>
-		<string>scope.stylus</string>
-	</dict>
-	<key>deleted</key>
-	<array/>
-	<key>isDelta</key>
-	<true/>
-	<key>uuid</key>
-	<string>DD8F8C2B-2B83-4734-82EE-8508EE344638</string>
+        <key>input</key>
+        <string>document</string>
+        <key>keyEquivalent</key>
+        <string>~@`</string>
+        <key>scope</key>
+        <string>scope.stylus</string>
+        <key>name</key>
+        <string>Compile and Display CSS</string>
+        <key>uuid</key>
+        <string>DD8F8C2B-2B83-4734-82EE-8508EE344638</string>
 </dict>
 </plist>
