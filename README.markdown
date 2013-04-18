@@ -12,9 +12,9 @@ Installation:
 	osascript -e 'tell app "TextMate" to reload bundles'
 
 ###Textmate 2
-    cd /Applications/TextMate.app/Contents/SharedSupport/Bundles
+    cd ~/Library/Application\ Support/Avian/Bundles
     git clone git://github.com/jameswomack/Stylus-TextMate-Bundle Stylus.tmbundle
-	osascript -e 'tell app "TextMate" to reload bundles'
+	# If Stylus doesn't automatically show up in your Bundles menu, restart TextMate 2
 
 The bundle does not yet include syntax highlighting, but does compile the markup and bring up a window showing you the results as CSS.
 
