@@ -1,0 +1,16 @@
+#!/bin/sh
+
+export USER_BUNDLE_DIR="$HOME/Library/Application Support/Avian/Bundles"
+
+echo "Creating directory $USER_BUNDLE_DIR"
+mkdir -p "$USER_BUNDLE_DIR"
+
+cd "$USER_BUNDLE_DIR"
+
+echo "Cloning repository into ${USER_BUNDLE_DIR}/Stylus.tmbundle"
+git clone git://github.com/jameswomack/Stylus-TextMate-Bundle Stylus.tmbundle
+
+echo "Globally installing stylus"
+npm i stylus -g
+
+echo "Done. If Stylus doesn't automatically show up in your Bundles menu, restart TextMate 2."

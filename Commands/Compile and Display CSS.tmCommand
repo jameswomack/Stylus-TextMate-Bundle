@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<dict>
-		<key>beforeRunningCommand</key>
-		<string>saveActiveFile</string>
-		<key>command</key>
-		<string>#!/bin/bash
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/bin/bash
 
-function highlight {
-  test `which pygmentize`
-  if [[ $? -eq 0 ]]; then
-    pygmentize -Onoclasses,nobackground=True -l css -f html
-  else
-    pre
+function nada {
+  test `which npm`
+  if [[ $? -eq 1 ]]; then
+		echo &quot;npm not found!&quot;
   fi
 }
 
-${TM_STYLUS:=stylus} | highlight
+${TM_STYLUS:=stylus -p}
 
-stylus ${TM_FILEPATH}</string>
-        <key>input</key>
-        <string>document</string>
-        <key>keyEquivalent</key>
-        <string>~@`</string>
-        <key>scope</key>
-        <string>scope.stylus</string>
-        <key>name</key>
-        <string>Compile and Display CSS</string>
-        <key>uuid</key>
-        <string>DD8F8C2B-2B83-4734-82EE-8508EE344638</string>
+stylus ${TM_FILEPATH} | nada</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>^~@4</string>
+	<key>scope</key>
+	<string>scope.stylus</string>
+	<key>name</key>
+	<string>Compile and Display CSS</string>
+	<key>uuid</key>
+	<string>DD8F8C2B-2B83-4734-82EE-8508EE344638</string>
 </dict>
 </plist>
