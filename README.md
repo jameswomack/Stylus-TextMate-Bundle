@@ -13,6 +13,7 @@ Installation:
 
 ###Textmate 2
 #### Manual
+    mkdir -p ~/Application\ Support/TextMate/Managed/Bundles
     cd ~/Application\ Support/TextMate/Managed/Bundles
     git clone git://github.com/jameswomack/Stylus-TextMate-Bundle Stylus.tmbundle
 	# If Stylus doesn't automatically show up in your Bundles menu, restart TextMate 2
